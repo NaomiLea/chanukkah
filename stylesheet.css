@@ -1,0 +1,78 @@
+body {
+    background-color: #200f54;
+}
+
+#foot {
+    width: 200px;
+    height: 30px;
+    background-color: #ffebcd;
+    position: absolute;
+    right: 300px;
+    top: 500px;
+}
+
+#stand {
+    width: 30px;
+    height: 200px;
+    background-color: #ffebcd;
+    position: absolute;
+    right: 380px;
+    top: 300px;
+}
+
+#candleStand {
+    width: 290px;
+    height: 20px;
+    background-color: #ffebcd;
+    position: absolute;
+    right: 250px;
+    top: 300px;
+}
+
+
+.candle, #shamash {
+	background-color: white;
+	width: 15px;
+	height: 50px;
+	position: absolute;
+	top: 250px;
+	}
+
+#one {
+	right: 250px;
+	
+}
+
+#two {
+	right: 285px;
+}
+
+#three {
+	right: 320px;
+}
+
+#four {
+	right: 355px;
+}
+
+#five {
+	right: 420px;
+}
+
+#six {
+	right: 455px;
+}
+
+#seven {
+	right: 490px;
+}
+
+#eight {
+	right: 525px;
+}
+
+#shamash {
+height: 60px;
+right: 390px;
+top: 240px;
+}
