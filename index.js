@@ -1,7 +1,7 @@
   $( function() {
-    $( "#lighting" ).draggable({ revert: "valid" });
+    $( "#lighting" ).draggable({ revert: "invalid" });
  
-    $( "#droppable" ).droppable({
+    $( ".candle" ).droppable({
       classes: {
         "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
@@ -9,8 +9,9 @@
       drop: function( event, ui ) {
         $( this )
           .addClass( "ui-state-highlight" )
-          .find( "#lighting" )
+          .find( "p" )
             .html( "Dropped!" );
       }
     });
   } );
+
