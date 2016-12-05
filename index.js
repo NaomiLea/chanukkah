@@ -1,17 +1,16 @@
-  $( function() {
-    $( "#lighting" ).draggable({ revert: "invalid" });
- 
-    $( ".candle" ).droppable({
-      classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "p" )
-            .html( "Dropped!" );
-      }
-    });
-  } );
+  $(function() {
+      $("#lighting").draggable({ revert: "valid" });
 
+
+
+
+      $("#droppable").droppable({
+          tolerance: 'touch',
+          drop: function() {
+              $("#droppable")
+                  .addClass("ui-state-highlight")
+                  .find("p")
+                  .html("Dropped with a touch!");
+          }
+      });
+  });

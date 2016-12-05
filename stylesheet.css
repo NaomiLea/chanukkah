@@ -2,6 +2,15 @@ body {
     background-color: #200f54;
 }
 
+#droppable {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border: ridge;
+  border-width: 5px;
+}
+
 #foot {
     width: 200px;
     height: 30px;
