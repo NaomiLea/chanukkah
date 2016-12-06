@@ -1,6 +1,6 @@
 $(function() {
     $("#flame").draggable({
-      
+
     });
     $(".flame").hide();
     $("#one").droppable({
@@ -13,49 +13,64 @@ $(function() {
     $("#two").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flametwo").show();
+            if ($("#flameone").is(":visible")) {
+                $("#flametwo").show();
+            }
+
 
         }
     });
     $("#three").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flamethree").show();
+            if ($("#flametwo").is(":visible")) {
+                $("#flamethree").show();
+            }
 
         }
     });
     $("#four").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flamefour").show();
+            if ($("#flamethree").is(":visible")) {
+                $("#flamefour").show();
+            }
 
         }
     });
     $("#five").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flamefive").show();
+            if ($("#flamefour").is(":visible")) {
+                $("#flamefive").show();
+            }
 
         }
     });
     $("#six").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flamesix").show();
+            if ($("#flamefive").is(":visible")) {
+                $("#flamesix").show();
+            }
 
         }
     });
     $("#seven").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flameseven").show();
+            if ($("#flamesix").is(":visible")) {
+                $("#flameseven").show();
+            }
 
         }
     });
     $("#eight").droppable({
         tolerance: 'touch',
         drop: function(event, ui) {
-            $("#flameeight").show();
+            if ($("#flameseven").is(":visible")) {
+                $("#flameeight").show();
+            }
 
         }
     });
