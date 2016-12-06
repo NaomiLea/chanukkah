@@ -2,15 +2,6 @@ body {
     background-color: #200f54;
 }
 
-#droppable {
-  height: 200px;
-  width: 200px;
-  padding: 10px;
-  margin-top: 10px;
-  border: ridge;
-  border-width: 5px;
-}
-
 #foot {
     width: 200px;
     height: 30px;
@@ -38,8 +29,7 @@ body {
     top: 300px;
 }
 
-.candle,
-#shamash {
+.candle, #shamash {
     background-color: white;
     width: 15px;
     height: 50px;
@@ -47,42 +37,46 @@ body {
     top: 250px;
 }
 
-#one {
+#one, #flameone {
     right: 250px;
 }
 
-#two {
+#two, #flametwo {
     right: 285px;
 }
 
-#three {
+#three, #flamethree {
     right: 320px;
 }
 
-#four {
+#four, #flamefour {
     right: 355px;
 }
 
-#five {
+#five, #flamefive {
     right: 420px;
 }
 
-#six {
+#six, #flamesix {
     right: 455px;
 }
 
-#seven {
+#seven, #flameseven {
     right: 490px;
 }
 
-#eight {
+#eight, #flameeight {
     right: 525px;
 }
 
 #shamash {
     height: 60px;
-    right: 390px;
-    top: 240px;
+    //right: 390px;
+    //top: 240px;
+    position: relative;
+    background-color: white;
+    right: 0px;
+    top: 20px;
 }
 
 #flame {
@@ -92,16 +86,112 @@ body {
     position: absolute;
     border-radius: 80px 80px 10px 10px;
     right: 390px;
+    top: 220px;
+    box-shadow: 0px 0px 2px 1px yellow;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.flame {
+    background-color: yellow;
+    width: 15px;
+    height: 20px;
+    border-radius: 80px 80px 10px 10px;
+    position: absolute;
     top: 230px;
     box-shadow: 0px 0px 2px 1px yellow;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 #droppable {
     width: 150px;
     height: 150px;
-    padding: 0.5em;
     float: left;
     margin: 10px;
+    border: ridge;
+    border-width: 5px;
+    position: absolute;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes example {
+    0% {
+        background-color: rgb(222, 232, 23);
+    }
+    10% {
+        background-color: rgb(233, 214, 42);
+    }
+    20% {
+        background-color: rgb(211, 224, 75);
+    }
+    30% {
+        background-color: rgb(231, 224, 68);
+    }
+    40% {
+        background-color: rgba(226, 215, 69)
+    }
+    50% {
+        background-color: rgba(217, 215, 46);
+    }
+    60% {
+        background-color: rgb(222, 232, 23);
+    }
+    70% {
+        background-color: rgb(233, 214, 42);
+    }
+    80% {
+        background-color: rgb(211, 224, 75);
+    }
+    90% {
+        background-color: rgb(231, 224, 68);
+    }
+    100% {
+        background-color: rgba(226, 215, 69)
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes example {
+    0% {
+        background-color: rgb(222, 232, 23);
+    }
+    10% {
+        background-color: rgb(233, 214, 42);
+    }
+    20% {
+        background-color: rgb(211, 224, 75);
+    }
+    30% {
+        background-color: rgb(231, 224, 68);
+    }
+    40% {
+        background-color: rgba(226, 215, 69, 0.78)
+    }
+    50% {
+        background-color: rgba(217, 215, 46, 0.79);
+    }
+    60% {
+        background-color: rgb(222, 232, 23);
+    }
+    70% {
+        background-color: rgb(233, 214, 42);
+    }
+    80% {
+        background-color: rgb(211, 224, 75);
+    }
+    90% {
+        background-color: rgb(231, 224, 68);
+    }
+    100% {
+        background-color: rgba(226, 215, 69, 0.78)
+    }
 }
 
 html {
@@ -112,4 +202,8 @@ html {
     background: -o-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
     background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
     background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+}
+
+audio {
+    display: none;
 }
