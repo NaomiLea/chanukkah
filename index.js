@@ -114,5 +114,11 @@ $(function() {
         $("#collection").html(collection);
     })
 
+$("#stop").click( function(min, max) {
+    var x = Math.floor((Math.random() * (5-1)) + 1);
+    document.getElementById("results").innerHTML = x;
+    console.log(x);
+})
+
 
 });

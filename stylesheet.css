@@ -206,7 +206,7 @@ audio {
     top: 150px;
 }
 
-.results {
+#results {
   width: 230px;
   height: 230px;
   background-color: white;
