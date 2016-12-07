@@ -1,3 +1,5 @@
+var number = 4;
+var bet = 0;
 $(function() {
     $("#flame").draggable({
 
@@ -75,6 +77,38 @@ $(function() {
         }
     });
 
-    var number = 4;
+
     $("#number").html(number);
+    $("#bet").html(bet);
+
+
+    $("#minus").click(function() {
+        if (bet > 0) {
+            bet--;
+        }
+
+        $("#bet").html(bet);
+    });
+
+    $("#plus").click(function() {
+        if (bet <= number) {
+            bet++;
+        }
+
+        $("#bet").html(bet);
+        if (bet > number) {
+            $("#bet").html(number);
+        }
+
+    });
+
+    $("#gamble").click(function() {
+        number -= bet;
+        $("#number").html(number);
+        bet = 0;
+        $("#bet").html(bet);
+    })
+
+
 });
+console.log(bet)
