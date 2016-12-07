@@ -209,11 +209,12 @@ audio {
 #results {
   width: 230px;
   height: 230px;
-  background-color: white;
   position: absolute;
   margin-left: 70px;
   z-index: 1;
   top: 185px;
+  font-size: 112px;
+
 
 }
 

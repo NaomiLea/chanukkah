@@ -102,6 +102,7 @@ $(function() {
             $("#bet").html(number);
         }
 
+
     });
 
     $("#gamble").click(function() {
@@ -112,13 +113,34 @@ $(function() {
         $("#bet").html(bet);
 
         $("#collection").html(collection);
+        $(".wrap").show();
+        $("#results").hide();
+        $("#stop").show();
     })
 
-$("#stop").click( function(min, max) {
-    var x = Math.floor((Math.random() * (5-1)) + 1);
-    document.getElementById("results").innerHTML = x;
-    console.log(x);
-})
+    $("#stop").click(function(min, max) {
+        var x = Math.floor((Math.random() * (5 - 1)) + 1);
+        console.log(x);
+        $(".wrap").hide();
+        $("#results").show();
+        if (x == 1) {
+            $("#results").css("background-color", "rgb(194, 89, 177)");
+            $("#results").html("נ")
+        }
+        if (x == 2) {
+            $("#results").css("background-color", "rgb(199, 133, 123)");
+            $("#results").html("ג")
+        }
+        if (x == 3) {
+            $("#results").css("background-color", "rgb(195, 167, 93)");
+            $("#results").html("ה")
+        }
+        if (x == 4) {
+            $("#results").css("background-color", "rgb(104, 205, 195)");
+            $("#results").html("פ")
+        }
+        $("#stop").hide();
+    })
 
 
 });
