@@ -1,5 +1,6 @@
 var number = 4;
 var bet = 0;
+var collection = 0;
 $(function() {
     $("#flame").draggable({
 
@@ -80,6 +81,7 @@ $(function() {
 
     $("#number").html(number);
     $("#bet").html(bet);
+    $("#collection").html(collection);
 
 
     $("#minus").click(function() {
@@ -103,12 +105,14 @@ $(function() {
     });
 
     $("#gamble").click(function() {
+        collection += bet;
         number -= bet;
         $("#number").html(number);
         bet = 0;
         $("#bet").html(bet);
+
+        $("#collection").html(collection);
     })
 
 
 });
-console.log(bet)

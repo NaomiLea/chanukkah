@@ -206,6 +206,17 @@ audio {
     top: 150px;
 }
 
+.results {
+  width: 230px;
+  height: 230px;
+  background-color: white;
+  position: absolute;
+  margin-left: 70px;
+  z-index: 1;
+  top: 185px;
+
+}
+
 .cube, .handle {
     position: relative;
     width: 200px;
@@ -357,44 +368,51 @@ audio {
 }
 
 .betting p {
-  color: rgb(201, 171, 204);
-  font-size: 24px;
-  margin-left: 10px;
+    color: rgb(201, 171, 204);
+    font-size: 24px;
+    margin-left: 10px;
 }
 
 #number, #bet {
-  width: 20px;
-  height: 10px;
-  color: rgb(201, 171, 204);
-  font-size: 24px;
+    width: 20px;
+    height: 10px;
+    color: rgb(201, 171, 204);
+    font-size: 24px;
 }
 
-.pot {
-  display: inline-block;
-}
-
-.bet {
-  display: inline-block;
+.pot, .bet {
+    display: inline-block;
 }
 
 .betting button {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(221, 213, 242);
-  color: rgb(0, 0, 0);
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(221, 213, 242);
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#collection {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(221, 213, 242);
+    color: rgb(0, 0, 0);
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
 }
 
 #gamble {
-  width: 100px;
-  height: 50px;
-  background-color: rgb(221, 213, 242);
-  color: rgb(0, 0, 0);
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  margin-left: 100px;
-  margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(221, 213, 242);
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 120px;
+    margin-top: 10px;
 }
