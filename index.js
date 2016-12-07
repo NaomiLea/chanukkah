@@ -74,4 +74,7 @@ $(function() {
 
         }
     });
+
+    var number = 4;
+    $("#number").html(number);
 });
