@@ -130,14 +130,26 @@ $(function() {
         if (x == 2) {
             $("#results").css("background-color", "rgb(199, 133, 123)");
             $("#results").html("ג")
+            number += collection;
+            collection = 0;
+            $("#number").html(number);
+            $("#collection").html(collection);
         }
         if (x == 3) {
             $("#results").css("background-color", "rgb(195, 167, 93)");
             $("#results").html("ה")
+            number += (collection/2);
+            collection -= (collection/2);
+            $("#number").html(number);
+            $("#collection").html(collection);
         }
         if (x == 4) {
             $("#results").css("background-color", "rgb(104, 205, 195)");
             $("#results").html("פ")
+            number -= 1;
+            collection += 1;
+            $("#number").html(number);
+            $("#collection").html(collection);
         }
         $("#stop").hide();
     })
