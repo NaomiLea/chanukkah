@@ -95,7 +95,7 @@ $(function() {
     });
 
     $("#plus").click(function() {
-        if (bet <= number) {
+        if (bet <= number-1) {
             bet++;
         }
 
