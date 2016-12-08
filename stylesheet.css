@@ -207,15 +207,13 @@ audio {
 }
 
 #results {
-  width: 230px;
-  height: 230px;
-  position: absolute;
-  margin-left: 70px;
-  z-index: 1;
-  top: 185px;
-  font-size: 112px;
-
-
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    margin-left: 70px;
+    z-index: 1;
+    top: 185px;
+    font-size: 112px;
 }
 
 .cube, .handle {
@@ -351,6 +349,12 @@ audio {
     font-size: 24px;
 }
 
+#restart {
+    width: 100px;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
 #stop {
     right: 1050px;
     top: 500px;
@@ -406,6 +410,12 @@ audio {
     margin-top: 10px;
 }
 
+#rules {
+    position: absolute;
+    top: 60px;
+    right: 1050px;
+}
+
 #gamble {
     width: 100px;
     height: 50px;
@@ -416,4 +426,35 @@ audio {
     font-size: 24px;
     margin-left: 120px;
     margin-top: 10px;
+}
+
+#close {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(221, 213, 242);
+  color: rgb(0, 0, 0);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+.rulesdescription {
+    position: absolute;
+    right: 500px;
+    top: 100px;
+    -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+    width: 300px;
+    height: 400px;
+    color: rgb(224, 221, 202);
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.rulesdescription p {
+  margin-left: 40px;
+  margin-top: 20px;
 }

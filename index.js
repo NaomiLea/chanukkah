@@ -2,6 +2,8 @@ var number = 4;
 var bet = 0;
 var collection = 0;
 $(function() {
+    $("#restart").hide();
+    $(".rulesdescription").hide();
     $("#flame").draggable({
 
     });
@@ -138,8 +140,8 @@ $(function() {
         if (x == 3) {
             $("#results").css("background-color", "rgb(195, 167, 93)");
             $("#results").html("ה")
-            number += (collection/2);
-            collection -= (collection/2);
+            number += Math.ceil(collection / 2);
+            collection -= Math.ceil(collection / 2);
             $("#number").html(number);
             $("#collection").html(collection);
         }
@@ -152,6 +154,25 @@ $(function() {
             $("#collection").html(collection);
         }
         $("#stop").hide();
+        if (collection > number) {
+            alert("you lose");
+            $("#gamble").hide();
+            $("#restart").show();
+        }
+
+    })
+    $('#restart').click(function() {
+        location.reload();
+    });
+    $("#rules").click(function() {
+        $(".rulesdescription").show();
+        $(".fullPage").hide();
+
+    })
+
+    $("#close").click(function(){
+      $(".rulesdescription").hide();
+      $(".fullPage").show();
     })
 
 
