@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="/socket.io/socket.io.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta charset="utf-8">
@@ -15,8 +16,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
-
 <body>
+
 
     <audio controls>
   <source src="maoztzur.mp3" type="audio/mp3">
@@ -79,7 +80,9 @@ Your browser does not support the audio element.
             <div class="collection">
                 <center>
                     <p>The pot</p>
+                    <form>
                     <div id="collection"></div>
+                  </form>
                 </center>
             </div>
             <button id="restart">Restart</button>

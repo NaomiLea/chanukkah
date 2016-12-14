@@ -1,16 +1,26 @@
-var express = require('express');
-var app = express();
-app.use(express.static('public'));
+var app = require('express')();
 var http = require('http').Server(app);
-var port = 3000;
-var dispatcher = require('httpdispatcher');
-http.listen(port, function() {
-    console.log('listening on *: ' + port);
-});
-
+var express = require("express");
+var io = require('socket.io')(http);
 
 app.use(express.static(__dirname + '/public'));
 
+
 app.get('/', function(req, res) {
-    res.sendfile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/index.html');
+});
+
+io.on('connection', function(socket) {
+    console.log('a user connected');
+    socket.on('disconnect', function() {
+        console.log('user disconnected');
+    });
+    socket.on('variable', function(object) {
+        console.log(object);
+        io.emit('update', object);
+    });
+});
+
+http.listen(3000, function() {
+    console.log('listening on *:3000');
 });
