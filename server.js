@@ -19,7 +19,18 @@ io.on('connection', function(socket) {
         console.log(object);
         io.emit('update', object);
     });
+
+    socket.on("join", function(name) {
+        socket.emit("join", name);
+    })
+
 });
+
+
+
+
+
+
 
 http.listen(3000, function() {
     console.log('listening on *:3000');

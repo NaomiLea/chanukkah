@@ -1,5 +1,12 @@
 $(document).ready(function() {
+    var server = io.connect("http://localhost:3000");
     var socket = io();
+    var nickname = prompt("What is your name?");
+    socket.emit("join", nickname);
+    socket.on("join", function(name) {
+            $("#username").html(nickname + " has: ");
+    });
+
     var number = 4;
     var bet = 0;
     var collection = 0;
@@ -134,6 +141,8 @@ $(document).ready(function() {
             console.log(x);
             $(".wrap").hide();
             $("#results").show();
+
+
             if (x == 1) {
                 $("#results").css("background-color", "rgb(194, 89, 177)");
                 $("#results").html("נ")
@@ -169,6 +178,13 @@ $(document).ready(function() {
                 $("#restart").show();
             }
 
+            socket.emit('variable', send);
+
+            $("#collection").html(collection);
+            $(".wrap").show();
+            $("#results").hide();
+            $("#stop").show();
+
         })
         $('#restart').click(function() {
             location.reload();
@@ -187,11 +203,9 @@ $(document).ready(function() {
 
     });
     socket.on('update', function(object) {
-      number = object.number;
-      collection = object.collection;
-      bet = object.bet;
-      $("#number").html(number);
-      $("#bet").html(bet);
-      $("#collection").html(collection);
+        collection = object.collection;
+        $("#collection").html(collection);
     })
+
+
 });
