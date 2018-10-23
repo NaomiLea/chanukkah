@@ -1,431 +1,346 @@
 body {
-    background-color: #200f54;
-    overflow: hidden;
+  background-color: #200f54;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #foot {
-    width: 200px;
-    height: 30px;
-    background-color: #ffebcd;
-    position: absolute;
-    right: 300px;
-    top: 500px;
+  width: 200px;
+  height: 30px;
+  background-color: #ffebcd;
+  position: absolute;
+  right: 300px;
+  top: 500px;
 }
 
 #stand {
-    width: 30px;
-    height: 200px;
-    background-color: #ffebcd;
-    position: absolute;
-    right: 380px;
-    top: 300px;
+  width: 30px;
+  height: 200px;
+  background-color: #ffebcd;
+  position: absolute;
+  right: 380px;
+  top: 300px;
 }
 
 #candleStand {
-    width: 290px;
-    height: 20px;
-    background-color: #ffebcd;
-    position: absolute;
-    right: 250px;
-    top: 300px;
+  width: 290px;
+  height: 20px;
+  background-color: #ffebcd;
+  position: absolute;
+  right: 250px;
+  top: 300px;
 }
 
 .candle, #shamash {
-    background-color: white;
-    width: 15px;
-    height: 50px;
-    position: absolute;
-    top: 250px;
+  background-color: white;
+  width: 15px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+}
+
+.chanukkiah {
+  visibility: hidden;
 }
 
 #one, #flameone {
-    right: 250px;
+  right: 250px;
 }
 
 #two, #flametwo {
-    right: 285px;
+  right: 285px;
 }
 
 #three, #flamethree {
-    right: 320px;
+  right: 320px;
 }
 
 #four, #flamefour {
-    right: 355px;
+  right: 355px;
 }
 
 #five, #flamefive {
-    right: 420px;
+  right: 420px;
 }
 
 #six, #flamesix {
-    right: 455px;
+  right: 455px;
 }
 
 #seven, #flameseven {
-    right: 490px;
+  right: 490px;
 }
 
 #eight, #flameeight {
-    right: 525px;
+  right: 525px;
 }
 
 #shamash {
-    height: 60px;
-    right: 395px;
-    top: 240px;
-    position: relative;
-    background-color: white;
-    right: 0px;
-    top: 20px;
+  height: 60px;
+  right: 395px;
+  top: 240px;
+  position: relative;
+  background-color: white;
+  right: 0px;
+  top: 20px;
 }
 
 #flame, .flame {
-    background-color: yellow;
-    width: 15px;
-    height: 20px;
-    position: absolute;
-    border-radius: 80px 80px 10px 10px;
-    box-shadow: 0px 0px 2px 1px yellow;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+  background-color: yellow;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  border-radius: 80px 80px 10px 10px;
+  box-shadow: 0px 0px 2px 1px yellow;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 #flame {
-    right: 390px;
-    top: 220px;
+  right: 390px;
+  top: 220px;
 }
 
 .flame {
-    top: 230px;
-}
-
-@-webkit-keyframes example, @keyframes example {
-    0% {
-        background-color: rgb(222, 232, 23);
-    }
-    10% {
-        background-color: rgb(233, 214, 42);
-    }
-    20% {
-        background-color: rgb(211, 224, 75);
-    }
-    30% {
-        background-color: rgb(231, 224, 68);
-    }
-    40% {
-        background-color: rgba(226, 215, 69)
-    }
-    50% {
-        background-color: rgba(217, 215, 46);
-    }
-    60% {
-        background-color: rgb(222, 232, 23);
-    }
-    70% {
-        background-color: rgb(233, 214, 42);
-    }
-    80% {
-        background-color: rgb(211, 224, 75);
-    }
-    90% {
-        background-color: rgb(231, 224, 68);
-    }
-    100% {
-        background-color: rgba(226, 215, 69)
-    }
-}
-
-@keyframes example {
-    0% {
-        background-color: rgb(222, 232, 23);
-    }
-    10% {
-        background-color: rgb(233, 214, 42);
-    }
-    20% {
-        background-color: rgb(211, 224, 75);
-    }
-    30% {
-        background-color: rgb(231, 224, 68);
-    }
-    40% {
-        background-color: rgba(226, 215, 69, 0.78)
-    }
-    50% {
-        background-color: rgba(217, 215, 46, 0.79);
-    }
-    60% {
-        background-color: rgb(222, 232, 23);
-    }
-    70% {
-        background-color: rgb(233, 214, 42);
-    }
-    80% {
-        background-color: rgb(211, 224, 75);
-    }
-    90% {
-        background-color: rgb(231, 224, 68);
-    }
-    100% {
-        background-color: rgba(226, 215, 69, 0.78)
-    }
-}
-
-html {
-    min-height: 100%;
-    background: #092756;
-    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
-    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
-    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
-    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
-    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(35, 24, 82, 0.22) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+  top: 230px;
 }
 
 audio {
-    display: none;
+  display: none;
 }
-
 
 /*SEVIVON*/
 
 .wrap {
-    perspective: 800px;
-    perspective-origin: 50% 100px;
-    position: absolute;
-    right: 1000px;
-    top: 200px;
+  perspective: 800px;
+  perspective-origin: 50% 100px;
 }
 
 .handlewrap {
-    perspective: 800px;
-    perspective-origin: 50% 50px;
-    position: absolute;
-    right: 1030px;
-    top: 150px;
+  perspective: 800px;
+  perspective-origin: 50% 50px;
+  position: absolute;
+  right: 1030px;
+  top: 150px;
 }
 
 #results {
-    width: 230px;
-    height: 230px;
-    position: absolute;
-    margin-left: 70px;
-    z-index: 1;
-    top: 185px;
-    font-size: 112px;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  margin-left: 70px;
+  z-index: 1;
+  top: 185px;
+  font-size: 112px;
 }
 
 .cube, .handle {
-    position: relative;
-    width: 200px;
-    transform-style: preserve-3d;
-    font-size: 112px;
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  font-size: 112px;
 }
 
 .cube p {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .cube div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
 }
 
 .handle div {
-    position: absolute;
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
 }
 
 .back {
-    transform: translateZ(-100px) rotateY(180deg);
-    background-color: rgb(195, 167, 93);
+  transform: translateZ(-100px) rotateY(180deg);
+  background-color: rgb(195, 167, 93);
 }
 
 .handleback {
-    transform: translateZ(50px) rotateY(180deg);
-    background-color: rgb(195, 167, 93);
+  transform: translateZ(50px) rotateY(180deg);
+  background-color: rgb(195, 167, 93);
 }
 
 .right {
-    transform: rotateY(-270deg) translateX(100px);
-    transform-origin: top right;
-    background-color: rgb(104, 205, 195);
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+  background-color: rgb(104, 205, 195);
 }
 
 .handleright {
-    transform: rotateY(-270deg) translateX(-50px);
-    transform-origin: top right;
-    background-color: rgb(104, 205, 195);
+  transform: rotateY(-270deg) translateX(-50px);
+  transform-origin: top right;
+  background-color: rgb(104, 205, 195);
 }
 
 .left {
-    transform: rotateY(270deg) translateX(-100px);
-    transform-origin: center left;
-    background-color: rgb(199, 133, 123);
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+  background-color: rgb(199, 133, 123);
 }
 
 .handleleft {
-    transform: rotateY(270deg) translateX(50px);
-    transform-origin: center left;
-    background-color: rgb(199, 133, 123);
+  transform: rotateY(270deg) translateX(50px);
+  transform-origin: center left;
+  background-color: rgb(199, 133, 123);
 }
 
 .top, .handletop {
-    transform: rotateX(-90deg) translateY(-100px);
-    transform-origin: top center;
-    background-color: rgb(97, 74, 254);
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top center;
+  background-color: rgb(97, 74, 254);
 }
 
 .bottom, .handlebottom {
-    transform: rotateX(90deg) translateY(100px);
-    transform-origin: bottom center;
-    background-color: rgb(97, 74, 254);
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom center;
+  background-color: rgb(97, 74, 254);
 }
 
 .front, .handlefront {
-    transform: translateZ(100px);
-    background-color: rgb(194, 89, 177);
+  transform: translateZ(100px);
+  background-color: rgb(194, 89, 177);
 }
 
 @keyframes spin {
-    from {
-        transform: rotateY(0);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 .cube, .handle {
-    animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
 }
 
 @keyframes spin-vertical {
-    from {
-        transform: rotateX(0);
-    }
-    to {
-        transform: rotateX(-360deg);
-    }
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(-360deg);
+  }
 }
 
 .cube-wrap.vertical .cube {
-    margin: 0 auto;
-    /* keeps the cube centered */
-    transform-origin: 0 100px;
-    animation: spin-vertical 5s infinite linear;
+  margin: 0 auto;
+  /* keeps the cube centered */
+  transform-origin: 0 100px;
+  animation: spin-vertical 5s infinite linear;
 }
 
 .handle-wrap.vertical .handle {
-    margin: 0 auto;
-    /* keeps the cube centered */
-    transform-origin: 0 100px;
-    animation: spin-vertical 5s infinite linear;
+  margin: 0 auto;
+  /* keeps the cube centered */
+  transform-origin: 0 100px;
+  animation: spin-vertical 5s infinite linear;
 }
 
 .cube-wrap.vertical .top, .handle-wrap.vertical .handletop {
-    transform: rotateX(-270deg) translateY(-100px);
+  transform: rotateX(-270deg) translateY(-100px);
 }
 
 .cube-wrap.vertical .back, .handle-wrap.vertical .handleback {
-    transform: translateZ(-100px) rotateX(180deg);
+  transform: translateZ(-100px) rotateX(180deg);
 }
 
 .cube-wrap.vertical .bottom, .handle-wrap.vertical .handlebottom {
-    transform: rotateX(-90deg) translateY(100px);
+  transform: rotateX(-90deg) translateY(100px);
 }
 
 .stop button {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    background-color: rgb(221, 213, 242);
-    color: rgb(0, 0, 0);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
+  background-color: rgb(221, 213, 242);
+  color: rgb(0, 0, 0);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 #restart {
-    width: 100px;
-    margin-left: 130px;
-    margin-top: 10px;
+  width: 100px;
+  margin-left: 130px;
+  margin-top: 10px;
 }
 
 #stop {
-    right: 1050px;
-    top: 500px;
+  right: 1050px;
+  top: 500px;
 }
 
 .betting {
-    position: absolute;
-    right: 600px;
-    -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
-    box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
-    width: 300px;
-    height: 500px;
-    font-family: 'Josefin Sans', sans-serif;
-    top: 50px;
+  width: 100%;
+  -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+  max-width: 300px;
+  height: 500px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .betting p {
-    color: rgb(201, 171, 204);
-    font-size: 24px;
-    margin-left: 10px;
+  color: rgb(201, 171, 204);
+  font-size: 24px;
+  margin-left: 10px;
 }
 
 #number, #bet {
-    width: 20px;
-    height: 10px;
-    color: rgb(201, 171, 204);
-    font-size: 24px;
+  width: 20px;
+  height: 10px;
+  color: rgb(201, 171, 204);
+  font-size: 24px;
 }
 
 .pot, .bet {
-    display: inline-block;
+  display: inline-block;
 }
 
 .betting button {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(221, 213, 242);
-    color: rgb(0, 0, 0);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(221, 213, 242);
+  color: rgb(0, 0, 0);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 #collection {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(221, 213, 242);
-    color: rgb(0, 0, 0);
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    font-size: 80px;
-    margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(221, 213, 242);
+  color: rgb(0, 0, 0);
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 10px;
 }
 
 #rules {
-    position: absolute;
-    top: 60px;
-    right: 1050px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 #gamble {
-    width: 100px;
-    height: 50px;
-    background-color: rgb(221, 213, 242);
-    color: rgb(0, 0, 0);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: 120px;
-    margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(221, 213, 242);
+  color: rgb(0, 0, 0);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 120px;
+  margin-top: 10px;
 }
 
 #close {
@@ -441,17 +356,16 @@ audio {
 }
 
 .rulesdescription {
-    position: absolute;
-    right: 500px;
-    top: 100px;
-    -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
-    box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
-    width: 300px;
-    height: 400px;
-    color: rgb(224, 221, 202);
-    font-family: 'Dosis', sans-serif;
-
+  position: absolute;
+  right: 500px;
+  top: 100px;
+  -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
+  width: 300px;
+  height: 400px;
+  color: rgb(224, 221, 202);
+  font-family: 'Dosis', sans-serif;
 }
 
 .rulesdescription p {
