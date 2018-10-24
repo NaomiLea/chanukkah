@@ -1,8 +1,8 @@
 body {
   background-color: #200f54;
-  overflow: hidden;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #foot {
@@ -272,11 +272,6 @@ audio {
   margin-top: 10px;
 }
 
-#stop {
-  right: 1050px;
-  top: 500px;
-}
-
 .betting {
   width: 100%;
   -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
@@ -285,6 +280,12 @@ audio {
   max-width: 300px;
   height: 500px;
   font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#stop {
+  margin-top: 20px;
 }
 
 .betting p {
