@@ -3,6 +3,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 #foot {
@@ -116,6 +118,7 @@ audio {
 .wrap {
   perspective: 800px;
   perspective-origin: 50% 100px;
+  margin-top: 50px;
 }
 
 .handlewrap {
@@ -129,11 +132,9 @@ audio {
 #results {
   width: 230px;
   height: 230px;
-  position: absolute;
-  margin-left: 70px;
   z-index: 1;
-  top: 185px;
   font-size: 112px;
+  margin-top: 50px;
 }
 
 .cube, .handle {
@@ -282,6 +283,7 @@ audio {
   font-family: 'Josefin Sans', sans-serif;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 #stop {
