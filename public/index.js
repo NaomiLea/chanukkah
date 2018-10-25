@@ -173,9 +173,9 @@ $(document).ready(function() {
             }
             $("#stop").hide();
             if (collection > number) {
-                alert("you lose");
                 $("#gamble").hide();
                 $("#restart").show();
+                alert("you lose");
             }
 
             socket.emit('variable', send);

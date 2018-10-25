@@ -2,13 +2,11 @@
   "name": "menorah",
   "version": "0.0.1",
   "description": "a chanukkah game",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.10.2",
     "nodemon": "^1.18.4",
     "openode": "^1.5.7",
     "socket.io": "^1.7.2"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.4"
   }
 }

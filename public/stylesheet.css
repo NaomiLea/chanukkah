@@ -269,7 +269,6 @@ audio {
 
 #restart {
   width: 100px;
-  margin-left: 130px;
   margin-top: 10px;
 }
 
@@ -284,6 +283,8 @@ audio {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  align-items: center;
+  text-align: center;
 }
 
 #stop {
@@ -326,6 +327,9 @@ audio {
   font-weight: bold;
   font-size: 80px;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #rules {
@@ -342,7 +346,6 @@ audio {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   font-size: 24px;
-  margin-left: 120px;
   margin-top: 10px;
 }
 
@@ -359,9 +362,6 @@ audio {
 }
 
 .rulesdescription {
-  position: absolute;
-  right: 500px;
-  top: 100px;
   -webkit-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
   box-shadow: 1px -1px 35px 17px rgba(0, 0, 0, 0.75);
